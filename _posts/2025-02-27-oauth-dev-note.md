@@ -22,7 +22,7 @@ Open Authorization
 사용자 자격 증명을 공유하지 않아도 서비스에 접근할 수 있는 방법을 고안하다가 탄생하게 되었습니다.
 
 ## OAuth 1.0
-![OAuth 1.0](https://github.com/user-attachments/assets/135e9bec-1d37-4f9f-bc59-f942730ad0ce.png)
+![OAuth 1.0](../assets/img/20250227/oauth1.0.png)
 
 
 ### 단점
@@ -35,7 +35,7 @@ Open Authorization
 
 ## OAuth 2.0
 <!-- OAuth 1.0보다 더 간단하고 직관적입니다. -->
-![OAuth 2.0](https://github.com/user-attachments/assets/e371276f-c150-4891-a6b5-767d66597c6f.png)
+![OAuth 2.0](../assets/img/20250227/oauth2.0.png)
 
 ### 장점
 1. 간단하고 안전함
