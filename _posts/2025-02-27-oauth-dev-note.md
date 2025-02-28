@@ -1,6 +1,6 @@
 ---
 title: OAuth (kakao, google)
-description: OAuth란? OAuth 적용
+description: OAuth란?
 # author: d_o0o_b
 # date: 2015-02-27 11:33:00 +0800
 categories: [Dev-Notes]
@@ -16,7 +16,7 @@ mermaid: true
 
 ## OAuth 란
 Open Authorization
-리소스 소유자가 사용자 자격 증명을 공유하지 않고도 타사 애플리케이션에 리소스에 액세스할 수 있는 권한을 부여하는 액세스 위임에 사용되는 프로토콜입니다.
+리소스 소유자가 사용자 자격 증명을 공유하지 않고도 타사 애플리케이션 리소스에 액세스할 수 있는 권한을 부여하는 액세스 위임에 사용되는 프로토콜입니다.
 
 ## OAuth 생긴 유래
 사용자 자격 증명을 공유하지 않아도 서비스에 접근할 수 있는 방법을 고안하다가 탄생하게 되었습니다.
