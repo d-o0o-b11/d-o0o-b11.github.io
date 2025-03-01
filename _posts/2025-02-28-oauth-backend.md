@@ -1,6 +1,6 @@
 ---
 title: OAuth 적용 (kakao, google)
-description: OAuth 적용
+description: OAuth 적용 (w. RT를 곁들인)
 # author: d_o0o_b
 # date: 2015-02-27 11:33:00 +0800
 categories: [First-App-Dev, Backend]
@@ -17,14 +17,14 @@ mermaid: true
 ## 개요
 사이드 프로젝트를 진행할 때, 많은 기획자분들이 카카오 소셜 로그인을 추가하길 원했습니다. 그래서 카카오 소셜 로그인 코드를 보일러플레이트로 만들어 둘 정도로 유용하게 활용해 왔습니다. 기존에 사용하던 보일러플레이트가 최선이라 믿고 있었지만, 이번 앱 개발에서 프론트엔드와 백엔드를 모두 맡으면서 더 나은 방법이 있을 것 같아 기존 구조를 다시 살펴보게 되었습니다.
 
-## 일반적인 OAuth 구조 [1]
-![Image](https://github.com/user-attachments/assets/d1f49b3e-d9ed-48bb-a2a1-16bc532f7929?raw=true)
-
-## 일반적인 OAuth 구조 [2]
-![Image](https://github.com/user-attachments/assets/f371beea-7a52-46e3-b22e-66fe5a422f18?raw=true)
+## 일반적인 OAuth 구조
+![Image](https://github.com/user-attachments/assets/d13becae-b54d-48f8-bff2-9237cc1b502f?raw=true)
 
 ## 내가 추구했던 OAuth 구조
-제가 선택한 구조는 [일반적인 OAuth 구조 2](#일반적인-oauth-구조-2)입니다.
+![Image](https://github.com/user-attachments/assets/427fabb5-3f13-462d-8af5-020756a2e3df?raw=true)
+
+<!-- ## 내가 추구했던 OAuth 구조
+제가 선택한 구조는 [일반적인 OAuth 구조 2](#일반적인-oauth-구조-2)입니다. -->
 
 ### 서버에서 처리하는 이유
 보안적인 측면에 대해 고려하였습니다. API 키나 클라이언트 시크릿 같은 중요한 정보가 브라우저 환경에서 노출될 위험이 있기 때문에 서버에서 이를 관리하는 것이 보다 안전하다고 판단했습니다. 
@@ -50,7 +50,7 @@ mermaid: true
 이러한 위험성을 고려했을 때, RT를 서버에서 안전하게 관리하는 것이 보안 측면에서 더 적절하다고 판단했습니다.
 
 ## AT만 반환하는 구조
-![Image](https://github.com/user-attachments/assets/33815e63-0dc5-4302-b63e-3fd9244f638e?raw=true)
+![Image](https://github.com/user-attachments/assets/2bb02b9b-53d5-45d4-a9e7-489187af0a4c?raw=true)
 
 
 ## 결론
