@@ -18,10 +18,11 @@ mermaid: true
 사이드 프로젝트를 진행할 때, 많은 기획자분들이 카카오 소셜 로그인을 추가하길 원했습니다. 그래서 카카오 소셜 로그인 코드를 보일러플레이트로 만들어 둘 정도로 유용하게 활용해 왔습니다. 기존에 사용하던 보일러플레이트가 최선이라 믿고 있었지만, 이번 앱 개발에서 프론트엔드와 백엔드를 모두 맡으면서 더 나은 방법이 있을 것 같아 기존 구조를 다시 살펴보게 되었습니다.
 
 ## 일반적인 OAuth 구조
-![Image](https://github.com/user-attachments/assets/d13becae-b54d-48f8-bff2-9237cc1b502f?raw=true)
+![Image](https://github.com/user-attachments/assets/ff1aa562-47ad-433d-adbd-2e709391f1a9?raw=true)
+
 
 ## 내가 추구했던 OAuth 구조
-![Image](https://github.com/user-attachments/assets/427fabb5-3f13-462d-8af5-020756a2e3df?raw=true)
+![Image](https://github.com/user-attachments/assets/dd07be5e-d3ac-43e4-8b49-b2191889c382?raw=true)
 
 <!-- ## 내가 추구했던 OAuth 구조
 제가 선택한 구조는 [일반적인 OAuth 구조 2](#일반적인-oauth-구조-2)입니다. -->
@@ -50,7 +51,7 @@ mermaid: true
 이러한 위험성을 고려했을 때, RT를 서버에서 안전하게 관리하는 것이 보안 측면에서 더 적절하다고 판단했습니다.
 
 ## AT만 반환하는 구조
-![Image](https://github.com/user-attachments/assets/2bb02b9b-53d5-45d4-a9e7-489187af0a4c?raw=true)
+![Image](https://github.com/user-attachments/assets/6193b605-a8f6-4e88-9155-195b414b1e35?raw=true)
 
 
 ## 결론
