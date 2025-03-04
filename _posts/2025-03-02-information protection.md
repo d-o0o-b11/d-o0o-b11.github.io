@@ -5,7 +5,7 @@ description: 기밀성, 무결성, 인증, 부인 방지 등 정보 보호의 �
 # date: 2015-02-27 11:33:00 +0800
 categories: [Dev-Notes, Theory]
 tags: [typography]
-pin: true
+# pin: true
 math: true
 mermaid: true
 # image:

@@ -5,7 +5,7 @@ description: OAuth 적용 (w. RT를 곁들인)
 # date: 2015-02-27 11:33:00 +0800
 categories: [Dev-Notes, Practice]
 tags: [typography]
-pin: true
+# pin: true
 math: true
 mermaid: true
 # image:

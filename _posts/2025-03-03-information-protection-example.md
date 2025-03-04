@@ -4,7 +4,7 @@ description: 최대한 보호하자
 # author: d_o0o_b
 categories: [Dev-Notes, Practice]
 tags: [typography]
-pin: true
+# pin: true
 math: true
 mermaid: true
 # image:

@@ -5,7 +5,7 @@ description: 데이터는 소중히
 # date: 2015-02-27 11:33:00 +0800
 categories: [Dev-Notes, Theory]
 tags: [typography]
-pin: true
+# pin: true
 math: true
 mermaid: true
 # image:
