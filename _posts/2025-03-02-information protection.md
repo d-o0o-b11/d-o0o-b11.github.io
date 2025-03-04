@@ -3,7 +3,7 @@ title: 정보 보호의 기본 원칙과 목표
 description: 기밀성, 무결성, 인증, 부인 방지 등 정보 보호의 기본 원칙과 보안 목표
 # author: d_o0o_b
 # date: 2015-02-27 11:33:00 +0800
-categories: [Dev-Notes]
+categories: [Dev-Notes, Theory]
 tags: [typography]
 pin: true
 math: true

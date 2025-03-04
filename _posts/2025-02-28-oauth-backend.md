@@ -3,7 +3,7 @@ title: OAuth 적용 (kakao, google)
 description: OAuth 적용 (w. RT를 곁들인)
 # author: d_o0o_b
 # date: 2015-02-27 11:33:00 +0800
-categories: [First-App-Dev, Backend]
+categories: [Dev-Notes, Practice]
 tags: [typography]
 pin: true
 math: true
