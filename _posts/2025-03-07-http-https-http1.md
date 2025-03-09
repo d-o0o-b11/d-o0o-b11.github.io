@@ -12,8 +12,8 @@ mermaid: true
 #   lqip: data:image/webp;base64,UklGRpoAAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSDIAAAARL0AmbZurmr57yyIiqE8oiG0bejIYEQTgqiDA9vqnsUSI6H+oAERp2HZ65qP/VIAWAFZQOCBCAAAA8AEAnQEqEAAIAAVAfCWkAALp8sF8rgRgAP7o9FDvMCkMde9PK7euH5M1m6VWoDXf2FkP3BqV0ZYbO6NA/VFIAAAA
 #   alt: Responsive rendering of Chirpy theme on multiple devices.
 ---
->  ✓ [HTTP 개요 글](https://developer.mozilla.org/ko/docs/Web/HTTP/Overview)을 보고 공부한 걸 정리한 내용입니다.
-{: .prompt-info }
+<!-- >  ✓ [HTTP 개요 글](https://developer.mozilla.org/ko/docs/Web/HTTP/Overview)을 보고 공부한 걸 정리한 내용입니다.
+{: .prompt-info } -->
 
 
 ## HTTP
@@ -137,5 +137,98 @@ HTTP 자체는 상태를 저장하지 않지만, 아래 기술을 활용하면 H
 
 <br/>
 <br/>
+
+## HTTP 요청과 응답의 구조
+
+### CRLF (Carriage Return & Line Feed)
+HTTP 메시지는 텍스트 기반으로 이루어져 있으며 줄바꿈을 **CRLF (\r\n)**로 구분합니다.
+
+- CR(Carriage Return, \r): 커서를 현재 줄의 맨 앞으로 이동
+
+- LF(Line Feed, \n): 줄을 다음 줄로 이동
+
+HTTP에서는 CRLF(\r\n)를 사용하여 요청과 응답의 각 줄을 구분합니다.
+
+예를 들어, HTTP 요청의 시작 줄과 헤더는 다음과 같은 형식으로 이루어집니다.
+
+![Image](https://github.com/user-attachments/assets/49b7ae2f-c9d8-4084-ab0e-f9aa8e32d8d0?raw=true)
+
+*여기서 \r\n\r\n은 헤더와 본문을 구분하는 역할을 합니다.
+
+
+## HTTP 메서드
+HTTP에서 클라이언트는 다양한 **메서드(Method)**를 사용하여 요청을 보냅니다.
+
+| 메서드    | 설명 |
+| :--------------------------- |:---------------------------|
+| GET  | 데이터 요청 (읽기 전용) | 
+| POST | 데이터 서버에 추가 | 
+| PUT  | 데이터를 해당 위치에 저장 (전체 수정) | 
+| PATCH | 리소스의 일부만 수정 | 
+| DELETE  | 데이터 삭제 | 
+
+
+## 멱등성과 안전한 메서드
+> 멱등성(Idempotency)이란?
+> 같은 요청을 여러 번 보내도 결과가 달라지지 않는 성질
+
+GET, PUT, DELETE는 멱등하지만, POST는 멱등하지 않음
+
+<br/>
+
+> 안전한 메서드(Safe Methods)란?
+> 서버의 리소스를 변경하지 않는 메서드
+
+GET, HEAD는 안전하지만, POST, PUT, DELETE는 안전하지 않음
+
+
+## HTTP 헤더
+요청과 응답에서 다양한 **헤더(Header)**가 사용됩니다.
+
+### 요청 헤더 (Request Headers)
+
+- Host
+<br/>
+요청을 보낼 서버 도메인 (예: www.example.com)
+
+- User-Agent
+<br/>
+요청을 보낸 클라이언트 정보 (브라우저, OS 등)
+
+- Accept
+<br/>
+클라이언트가 받을 수 있는 데이터 타입 (MIME 타입)
+
+- Authorization
+<br/>
+인증 정보 포함 (ex: Bearer Token)
+
+- Cookie
+<br/>
+클라이언트의 세션 정보
+
+<br/>
+
+### 응답 헤더 (Response Headers)
+
+- Content-Type
+<br/>
+응답 본문의 데이터 형식 (ex: text/html, application/json)
+
+- Set-Cookie
+<br/>
+클라이언트에 쿠키 저장 요청
+
+- Cache-Control
+<br/>
+캐싱 정책 (no-cache, max-age=3600 등)
+
+- Location
+<br/>
+리디렉션할 URL
+
+<br/>
+<br/>
+
 
 이번 블로그를 작성하면서 실제로 패킷을 직접 확인할 수 있다는 사실을 알게 되었습니다. 패킷을 분석해보니 데이터가 평문으로 전송될 경우 보안에 취약해질 수 있으며 이로 인해 사이트가 해킹 등의 위험에 노출될 가능성이 높다는 점을 깨달았습니다.
