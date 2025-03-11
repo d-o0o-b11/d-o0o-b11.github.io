@@ -1,5 +1,5 @@
 ---
-title: HTTP , HTTPS 동작 원리 [2] - 2
+title: HTTP , HTTPS 동작 원리 [3]
 description: HTTP 캐싱
 # author: d_o0o_b
 categories: [Dev-Notes, Theory]
