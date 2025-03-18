@@ -1,5 +1,5 @@
 ---
-title: 번응형 UI
+title: 반응형 UI
 description: 두번째 고난
 # author: d_o0o_b
 categories: [Minime]
