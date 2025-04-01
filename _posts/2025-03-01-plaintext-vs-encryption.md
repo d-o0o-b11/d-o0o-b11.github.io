@@ -1,17 +1,10 @@
 ---
 title: Plaintext vs Encryption
 description: 데이터는 소중히
-# author: d_o0o_b
-# date: 2015-02-27 11:33:00 +0800
 categories: [Dev-Notes, Theory]
 tags: [typography]
-# pin: true
 math: true
 mermaid: true
-# image:
-#   path: /commons/devices-mockup.png
-#   lqip: data:image/webp;base64,UklGRpoAAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSDIAAAARL0AmbZurmr57yyIiqE8oiG0bejIYEQTgqiDA9vqnsUSI6H+oAERp2HZ65qP/VIAWAFZQOCBCAAAA8AEAnQEqEAAIAAVAfCWkAALp8sF8rgRgAP7o9FDvMCkMde9PK7euH5M1m6VWoDXf2FkP3BqV0ZYbO6NA/VFIAAAA
-#   alt: Responsive rendering of Chirpy theme on multiple devices.
 ---
 
 ## 평문(Plaintext)
@@ -20,25 +13,29 @@ mermaid: true
 
 ## 암호화(Encryption)
 암호화는 데이터를 읽을 수 없는 형태로 변환하는 과정을 말합니다. 암호화된 데이터는 키를 가진 사람만 해독할 수 있기 때문에 보안에 유리합니다.
-- 암호화된 데이터는 아무리 누군가가 데이터를 가로챈다고 해도, 암호화 키 없이는 원래 내용을 알 수 없습니다.
+- 암호화된 데이터는 아무리 누군가가 데이터를 가로챈다고 해도 암호화 키 없이는 원래 내용을 알 수 없습니다.
+
+<br/>
+<br/>
 
 ## 암호화 방식
 ![Image](https://github.com/user-attachments/assets/7607e624-d0b1-4650-8eb6-df81a7da8c72?raw=true)
 
 
-1. **대칭키 암호화(Symmetric encryption)**
-<br/>
+### 대칭키 암호화(Symmetric encryption)
 동일한 키로 데이터를 암호화하고 복호화합니다. 빠르지만 키를 안전하게 공유하는 것이 중요합니다.
-
-2. **비대칭키 암호화(Asymmetric encryption)**
 <br/>
+
+### 비대칭키 암호화(Asymmetric encryption)
 두 개의 다른 키(공개키와 개인키)를 사용하여 암호화와 복호화를 처리합니다. 공개키로 암호화한 데이터는 개인키로만 복호화할 수 있습니다.
-
-
-3. **해시(Hashing)**
 <br/>
+
+### 해시(Hashing)
 암호화는 아니지만, 데이터를 고정된 길이의 고유한 값으로 변환하는 과정입니다. 주로 패스워드 저장 시 사용되며 일방향 암호화로 복호화가 불가능합니다.
 
+
+<br/>
+<br/>
 
 
 ## 암호화 알고리즘
