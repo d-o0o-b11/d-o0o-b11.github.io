@@ -53,9 +53,9 @@ OAuth는 공식적으로 RFC 문서에서 **"Authorization Framework"**로 정�
 <br/>
 
 ### OAuth2.0 흐름에서 중요한 포인트
-1. Authorization Code는 한 번만 사용하고 Access Token은 일정 기간만 유효하다.
-2. Access Token이 만료되면 Refresh Token을 사용해 새로운 Access Token을 발급 가능하다.
-3. Client Secret은 애플리케이션 서버와 OAuth 서버 사이에서 비밀 정보로 외부에 노출되면 안된다.
+1. Authorization Code는 한 번만 사용하고 Access Token은 일정 기간만 유효합니다.
+2. Access Token이 만료되면 Refresh Token을 사용해 새로운 Access Token을 발급 가능합니다.
+3. Client Secret은 애플리케이션 서버와 OAuth 서버 사이에서 비밀 정보로 외부에 노출되면 안됩니다.
 
 <br/>
 <br/>
