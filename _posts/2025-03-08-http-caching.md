@@ -7,14 +7,12 @@ tags: [typography]
 # pin: true
 math: true
 mermaid: true
-# image:
-#   path: /commons/devices-mockup.png
-#   lqip: data:image/webp;base64,UklGRpoAAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSDIAAAARL0AmbZurmr57yyIiqE8oiG0bejIYEQTgqiDA9vqnsUSI6H+oAERp2HZ65qP/VIAWAFZQOCBCAAAA8AEAnQEqEAAIAAVAfCWkAALp8sF8rgRgAP7o9FDvMCkMde9PK7euH5M1m6VWoDXf2FkP3BqV0ZYbO6NA/VFIAAAA
-#   alt: Responsive rendering of Chirpy theme on multiple devices.
 ---
 
 ## HTTP 캐싱
 불필요한 네트워크 요청을 줄여 성능을 최적화하는 기술입니다.
+
+<br/>
 
 ### 캐싱 관련 헤더
 
@@ -24,11 +22,9 @@ mermaid: true
 | ETag | 리소스의 버전을 나타내는 해시값, 변경 시 새로운 값 제공 | 
 | Last-Modified  | 리소스의 마지막 수정 시간 표시 | 
 
+<br/>
+
 ### 브라우저 캐싱 vs 서버 캐싱
-
-브라우저 캐싱: 클라이언트에서 캐싱된 데이터를 재사용 (ex: Cache-Control)
-
-서버 캐싱: CDN, 프록시 서버 등을 활용해 응답을 캐싱
 
 - 브라우저 캐싱 
     - 클라이언트에서 리소스를 저장하여 동일한 요청 시 캐시된 데이터를 재사용합니다.
@@ -41,6 +37,8 @@ mermaid: true
     - ex. Cloudflare, Varnish 같은 캐시 서버 사용
     - ex. Redis, Memcached 등을 사용해 DB 조회 결과를 캐싱하여 응답 속도 개선
 
+<br/>
+
 ### CDN, 프록시 서버 vs Redis
 - CDN/프록시 서버 (예: Cloudflare, Varnish)
     - HTTP 응답을 캐싱해서 서버 부하를 줄임
@@ -51,6 +49,8 @@ mermaid: true
 - Redis/Memcached
     - DB 조회 결과를 캐싱해서 애플리케이션의 데이터 조회 성능을 향상
     - ex. MySQL에서 자주 조회하는 데이터를 Redis에 저장하여 빠르게 제공
+
+<br/>
 
 ### 브라우저 캐싱 vs 서버 캐싱 목적과 효율성 측면
 1. 브라우저 캐싱 (Client-side Caching)
