@@ -1,6 +1,6 @@
 ---
 title: 앱 등록
-description: 드디어 내 앱이 출시되었다!
+description: 드디어 앱이 출시되었다!
 # author: d_o0o_b
 categories: [Minime]
 tags: [typography]
