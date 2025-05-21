@@ -52,7 +52,7 @@ sequenceDiagram
     end
 
     %%  TCP 연결 부분 강조 시작
-    rect rgb(255, 255, 200)
+    rect rgba(255, 255, 200, 0.44)
     User->>Web: 12. TCP 연결 시도 (3-Way Handshake 시작)
     Web-->>User: 13. TCP 연결 수립 완료
     end
