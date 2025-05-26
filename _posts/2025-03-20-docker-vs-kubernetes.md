@@ -48,6 +48,7 @@ flowchart LR
 - `docker run` → Client가 Daemon에 요청
 - Daemon이 이미지 Pull → 컨테이너 생성 → 실행
 
+[Docker 구조 글 보러가기](https://d-o0o-b11.github.io/posts/docker/)
 
 <br/>
 
@@ -117,6 +118,23 @@ flowchart TB
 <br/>
 
 ## 구조 비교
+
+```mermaid
+---
+config:
+  theme: neo
+  look: handDrawn
+---
+graph TB
+  Docker["Docker"]
+  K8s["Kubernetes"]
+
+  Docker -->|컨테이너 생성 및 실행| App["애플리케이션 실행"]
+  K8s -->|컨테이너 오케스트레이션| Cluster["클러스터 관리"]
+
+  K8s -->|스케일링, 로드밸런싱, 복구| 기능들
+
+```
 
 | 항목    | Docker                 | Kubernetes              |
 | ----- | ---------------------- | ----------------------- |
