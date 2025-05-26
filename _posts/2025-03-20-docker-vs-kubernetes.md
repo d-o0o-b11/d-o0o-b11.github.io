@@ -115,6 +115,8 @@ flowchart TB
 
 ```
 
+[Kubernetes 구조 글 보러가기](https://d-o0o-b11.github.io/posts/kubernetes/)
+
 <br/>
 
 ## 구조 비교
