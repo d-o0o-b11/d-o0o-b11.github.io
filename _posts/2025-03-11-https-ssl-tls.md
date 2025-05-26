@@ -273,7 +273,7 @@ HTTPS 환경에서 HTTP로 리소스를 요청하면 브라우저는 이를 Mixe
 
 
 
-### 궁금증
+### 궁금한 점들
 
 #### Q. 브라우저에 저장된 CA 인증서는 어떻게 확인하나요?
 > 주소창에 `chrome://settings/certificates` 입력
@@ -314,7 +314,7 @@ ACM을 사용하면 간편하게 SSL/TLS 인증서를 발급받을 수 있습니
 ![Image](https://github.com/user-attachments/assets/d8df9e94-c864-42e8-8e16-bdb000d6f755?raw=true) -->
 <!-- 
 
-## 궁금증
+## 궁금한 점들
 
 ### 브라우저에 CA 인증서 목록이 있다고 했는데 직접 확인해보고 싶다.
 > 주소창에 `chrome://settings/certificates` 입력
