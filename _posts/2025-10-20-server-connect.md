@@ -99,7 +99,7 @@ CSS 그라데이션을 선택한 이유
 
 배경 깔고 > 그라데이션 깔고 > 별 깔고
 <!-- 순서 이미지 추가 -->
-![Image](https://github.com/user-attachments/assets/23cc1003-3814-478d-80c1-fdb587b168de?raw=true)
+![Image](https://github.com/user-attachments/assets/34379e0f-f86b-4ee2-88a5-68e82b242b3d?raw=true)
 
 이렇게 진행하였습니다.
 

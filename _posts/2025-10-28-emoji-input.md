@@ -12,10 +12,16 @@ mermaid: true
 
 ## 개요
 
-현재 저희 서비스의 주 기능이라고 생각이 들 정도로
-중요한 화면에서 자주 나오기 때문에 제일 개선을 해야할 부분이었습니다.
+![Image](https://github.com/user-attachments/assets/b347b480-e3e7-4ab7-bd83-13c4a17a6928?raw=true)
 
-앱의 핵심 경험이 이모지 선택에서 시작되기 때문에 이 부분의 성능은 앱 전체의 인상을 좌우합니다.
+해당 화면은 현재 서비스의 핵심 기능 중 하나라고 볼 수 있을 만큼,
+중요한 흐름에서 반복적으로 노출되는 화면입니다.
+그만큼 가장 먼저 개선이 필요하다고 판단한 영역이기도 했습니다.
+
+앱의 첫 인상이 이모지 선택 경험에서 시작되는 만큼,
+이 과정에서의 성능과 반응성은 앱 전체에 대한 인상을 좌우합니다.
+작은 지연이나 불편함도 사용자 경험에 직접적인 영향을 줄 수 있기 때문에,
+이번 개선에서는 이 부분에 집중해 문제를 하나씩 짚어보았습니다.
 
 
 ## 문제 발견
@@ -193,7 +199,7 @@ const CategoryTab = ({ category, onSelect }) => {
 
 ## 토스 이모지 적용
 
-### 왜 토스 이모지?
+### 왜 토스 이모지인가?
 
 그러다니보니 속도 개선도 되었고 저희는 토스 이모지를 사용하고 있는데 라이브러리를 사용한 것보다 더 예쁘게 나오게 되어서
 수정하길 잘했다고 생각이 듭니다!
@@ -247,7 +253,7 @@ const CategoryTab = ({ category, onSelect }) => {
 테스터들이 지적한 문제는 실제 사용자들도 느낄 문제입니다.
 피드백을 무시하지 말고 진지하게 받아들여야 합니다.
 
-### 5. 디자이너와의 협업
+<!-- ### 5. 디자이너와의 협업
 
 **기술적 제약을 공유**
 "2000개 이모지는 성능상 어렵습니다"
@@ -257,85 +263,19 @@ const CategoryTab = ({ category, onSelect }) => {
 
 **Win-Win 결과**
 - 개발: 성능 개선
-- 디자인: 더 예쁜 토스 이모지 사용
+- 디자인: 더 예쁜 토스 이모지 사용 -->
+
+<br/>
 
 
-## 향후 개선 방향
+## 마무리하며
 
-### 1. 이모지 검색 기능
+이모지 선택이라는 아주 작은 인터랙션이었지만, 그 안에는 생각보다 많은 고민이 담겨 있었습니다.
+“이 정도는 괜찮지 않을까?” 하고 넘길 수도 있었던 성능 문제부터,
+“사용자는 이 과정을 어떻게 느낄까?”라는 질문까지 계속 스스로에게 되묻게 되었습니다.
 
-```typescript
-const [searchQuery, setSearchQuery] = useState('');
+- 항상 라이브러리가 최선의 선택은 아니다
+- 사용자 피드백은 가볍게 넘기지 말아야 한다
 
-const filteredEmojis = useMemo(() => {
-  if (!searchQuery) return emojis;
-  return emojis.filter(emoji =>
-    emoji.name.includes(searchQuery) ||
-    emoji.keywords.some(k => k.includes(searchQuery))
-  );
-}, [searchQuery, emojis]);
-```
-
-### 2. 최근 사용 이모지
-
-```typescript
-const [recentEmojis, setRecentEmojis] = useState([]);
-
-const handleEmojiSelect = (emoji) => {
-  // 최근 사용 목록 업데이트
-  setRecentEmojis(prev => {
-    const filtered = prev.filter(e => e.unicode !== emoji.unicode);
-    return [emoji, ...filtered].slice(0, 24);
-  });
-
-  // AsyncStorage에 저장
-  await AsyncStorage.setItem('recentEmojis', JSON.stringify(recentEmojis));
-};
-```
-
-### 3. 자주 쓰는 이모지 상단 고정
-
-사용 빈도를 분석하여 인기 있는 이모지를 상단에 배치합니다.
-
-### 4. 이모지 애니메이션
-
-```typescript
-const AnimatedEmoji = ({ emoji, onPress }) => {
-  const scale = useSharedValue(1);
-
-  const handlePress = () => {
-    scale.value = withSequence(
-      withTiming(1.2, { duration: 100 }),
-      withTiming(1, { duration: 100 })
-    );
-    onPress(emoji);
-  };
-
-  const animatedStyle = useAnimatedStyle(() => ({
-    transform: [{ scale: scale.value }]
-  }));
-
-  return (
-    <Animated.View style={animatedStyle}>
-      <Pressable onPress={handlePress}>
-        <Text>{emoji.unicode}</Text>
-      </Pressable>
-    </Animated.View>
-  );
-};
-```
-
-
-## 마치며
-
-작은 성능 문제라도 무시하지 말아야 한다는 것을 배웠습니다.
-
-**핵심 교훈:**
-1. 라이브러리보다 직접 구현이 나을 때가 있다
-2. 성능 문제는 발견 즉시 해결하자
-3. 데이터를 줄이는 것이 최고의 최적화
-4. 사용자 피드백을 진지하게 받아들이자
-5. 디자이너와 함께 해결책을 찾자
-
-이모지 선택이라는 작은 인터랙션 하나도, 사용자 경험에 큰 영향을 미칩니다.
-디테일에 집중하는 것이 좋은 앱을 만드는 길이라고 생각합니다!
+결국, 작은 디테일 하나가 사용자 경험 전체를 좌우할 수 있다는 것을 다시 한번 느꼈습니다.
+사소해 보이는 부분일수록 더 깊이 고민하는 것이 좋은 앱으로 이어진다고 생각합니다.!
