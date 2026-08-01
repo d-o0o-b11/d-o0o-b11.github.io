@@ -7,6 +7,7 @@ tags: [typography]
 # pin: true
 math: true
 mermaid: true
+media_subpath: /assets/img/posts/http-network
 ---
 
 ## 개요
@@ -32,7 +33,7 @@ HTTP/1.0부터 시작해서 발전을 거듭하여 현재는 HTTP/3 까지 발�
 기본적으로 한 연결당 하나의 요청을 처리하도록 설계되었다.
 이는 RTT 증가를 불러오게 되었다.
 
-![Image](https://github.com/user-attachments/assets/02c5a833-ea9c-4b9f-9cd2-604611ea0401?raw=true)
+![Image](1.png)
 
 > 서버로부터 파일을 가져올 때마다 TCP의 **3-way-handshake**를 계속해서 열어야 하기 때문에 RTT가 증가한다는 단점이 있다.
 
@@ -75,7 +76,7 @@ HTTP/1.0에서 발전한 것이 바로 HTTP/1.1이다.
 
 *HTTP/1.0에서도 keep-alive가 있었지만 표준화가 되어 있지 않았고 HTTP/1.1부터 표준화가 되어 기본 옵션으로 설정되었다.
 
-![Image](https://github.com/user-attachments/assets/8e3824f3-a6ae-476f-9ecc-9ab8b2399682?raw=true)
+![Image](2.png)
 
 한 번 TCP-way-handshake가 발생하면 그 다음부터는 발생하지 않는다.
 But, 문서 안에 포함된 다수의 리소스(이미지, 동영상, css파일, js 파일 등)를 처리하려면 요청할 리소스 개수에 비례해서 대기 시간이 길어진다.
@@ -214,7 +215,7 @@ CA에서 발급한 인증서는 안전한 연결을 시작하는 데 있어 필�
 HTTP/1.1 및 HTTP/2와 함께 World Wide Web에서 정보를 교환하는 데 사용되는 HTTP의 3번째 버전입니다.
 TCP 위에서 돌아가는 HTTP/2와는 달리 HTTP/3은 QUIC 계층 위에서 돌아가며 TCP 기반이 아닌 UDP 기반으로 돌아간다.
 
-![Image](https://github.com/user-attachments/assets/2638c2d4-c874-4cb6-a931-ef5b0a99b32f?raw=true)
+![Image](3.png)
 
 HTTP/2에서 장점이었던 멀티플렉싱을 가지고 있으며 초기 연결 설정 시 지연 시간 감소라는 장점이 있다.
 

@@ -7,6 +7,7 @@ tags: [typography]
 # pin: true
 math: true
 mermaid: true
+media_subpath: /assets/img/posts/toss-emoji
 ---
 
 ## 개요
@@ -30,12 +31,12 @@ mermaid: true
 
 ### 변경 전
 
-![Image](https://github.com/user-attachments/assets/af15ac0b-7f6a-4f61-aa3c-21a028c26b46?raw=true)
+![Image](1.png)
 
 
 ### 변경 후
 
-![Image](https://github.com/user-attachments/assets/23abdbdd-a676-45fc-90c0-42a759e92450?raw=true)
+![Image](2.png)
 
 
 <br/>

@@ -7,6 +7,7 @@ tags: [typography]
 # pin: true
 math: true
 mermaid: true
+media_subpath: /assets/img/posts/bottom-sheet
 ---
 
 ## 개요
@@ -30,7 +31,7 @@ React Native에서 바텀 시트를 구현하는 과정에서 두 가지 주요 
 ### 문제 화면
 > 탭 UI를 가리지 못하고 그 위에서 올라오는 바텀 시트
 
-![문제 화면](https://github.com/user-attachments/assets/59cc0a91-4686-4c06-88df-14a7e16e2d22?raw=true){: w='300' }
+![문제 화면](1.png){: w='300' }
 
 
 ### 해결 방법
@@ -43,7 +44,7 @@ React Native에서 바텀 시트를 구현하는 과정에서 두 가지 주요 
 
 
 ### 구현 목표 화면
-![정상 화면](https://github.com/user-attachments/assets/ece5698e-4868-4314-ab3a-968bc73813e8?raw=true){: w='400' }
+![정상 화면](2.png){: w='400' }
 
 
 <br/>
@@ -56,7 +57,7 @@ React Native에서 바텀 시트를 구현하는 과정에서 두 가지 주요 
 ### 문제 화면 
 > 높이 100%로 설정했을 때 불필요한 여백이 발생하는 화면
 
-![Image](https://github.com/user-attachments/assets/b6ae6ab0-909c-4a06-bad4-11fccae47f7f?raw=true){: w='300' }
+![Image](3.png){: w='300' }
 
 
 ### 주요 문제

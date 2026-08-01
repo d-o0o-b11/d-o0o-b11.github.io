@@ -5,6 +5,7 @@ categories: [Dev-Notes, Practice]
 tags: [typography]
 math: true
 mermaid: true
+media_subpath: /assets/img/posts/information-protection-example
 ---
 
 ## 개요
@@ -56,7 +57,7 @@ JWT에는 사용자 식별 정보 및 권한 정보가 포함되어 있습니다
 AWS **WAF(Web Application Firewall)**를 도입하여 무작위 요청 및 악성 트래픽을 차단했습니다.
 이를 통해 SQL Injection, XSS, DDoS 등 다양한 웹 공격을 효과적으로 방어할 수 있었습니다.
 
-![Image](https://github.com/user-attachments/assets/ec54f7bf-0d68-4b52-a6d0-bf12dda9a942?raw=true){: w='400' }
+![Image](1.png){: w='400' }
 > 약, 10K 정도 악성 트래픽을 차단하였습니다.
 
 ### 적용된 보안 원칙

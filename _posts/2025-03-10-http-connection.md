@@ -7,6 +7,7 @@ tags: [typography]
 # pin: true
 math: true
 mermaid: true
+media_subpath: /assets/img/posts/http-connection
 ---
 
 ## 개요
@@ -262,7 +263,7 @@ done
 ```
 > `Connection: keep-alive` 헤더를 통해 연결을 유지한 상태에서 10번 요청합니다.
 
-![Image](https://github.com/user-attachments/assets/a10f7430-9b70-41f7-8991-4f6a47d55be0?raw=true)
+![Image](1.png)
 
 - 평균 응답 시간 ↓   
 - TCP 상태 유지로 인해 빠른 처리 가능
@@ -279,7 +280,7 @@ done
 ```
 > `Connection: close` 헤더를 통해 요청마다 연결을 종료하고 새로 생성합니다.
 
-![Image](https://github.com/user-attachments/assets/932bae90-5c08-456d-a781-7244edc08c8e?raw=true)
+![Image](2.png)
 
 - 응답 시간 ↑
 - 매번 연결 생성으로 인해 성능 저하
@@ -294,9 +295,9 @@ curl -I -s --http1.1 https://example.com
 ```
 > 서버가 HTTP/2를 기본으로 지원하더라도 클라이언트가 HTTP/2를 지원하지 않으면 자동으로 HTTP/1.1로 Fallback됩니다.
 
-![Image](https://github.com/user-attachments/assets/11ea2bf6-8f67-4d60-995a-24d5c718a13e?raw=true)
+![Image](3.png)
 
-![Image](https://github.com/user-attachments/assets/39b0509e-0f6c-4ae5-aa83-97a0f1123983?raw=true)
+![Image](4.png)
 
 => HTTP/2를 기본으로 사용하지만 클라이언트가 HTTP/2를 지원하지 않으면 자동으로 HTTP/1.1로 연결된다.
 
@@ -561,7 +562,7 @@ for i in {1..10}; do curl -s -w "Time taken for request: %{time_total}\n" --http
 -> 10번 이상 반복해서 요청을 보내고 평균 응답 시간 계산
 
 ```
-![Image](https://github.com/user-attachments/assets/a10f7430-9b70-41f7-8991-4f6a47d55be0?raw=true)
+![Image](1.png)
 
 - 단기 연결 (Short-lived Connection) 사용 시
 <br/>
@@ -574,7 +575,7 @@ for i in {1..10}; do curl -s -w "Time taken for request: %{time_total}\n" --http
 -> 10번 이상 반복해서 요청을 보내고 평균 응답 시간 계산
 ```
 
-![Image](https://github.com/user-attachments/assets/932bae90-5c08-456d-a781-7244edc08c8e?raw=true)
+![Image](2.png)
 
 
 ### 내가 배포한 웹사이트들은 HTTP 버전 몇을 쓰고 있었던걸까?
@@ -585,8 +586,8 @@ curl -I -s --http2 https://사이트
 curl -I -s --http1.1 https://사이트
 ```
 
-![Image](https://github.com/user-attachments/assets/11ea2bf6-8f67-4d60-995a-24d5c718a13e?raw=true)
+![Image](3.png)
 
-![Image](https://github.com/user-attachments/assets/39b0509e-0f6c-4ae5-aa83-97a0f1123983?raw=true)
+![Image](4.png)
 
 => HTTP/2를 기본으로 사용하지만 클라이언트가 HTTP/2를 지원하지 않으면 자동으로 HTTP/1.1로 연결된다. -->

@@ -8,6 +8,7 @@ tags: [typography]
 math: true
 mermaid: true
 
+media_subpath: /assets/img/posts/http-https-http1
 ---
 <!-- >  ✓ [HTTP 개요 글](https://developer.mozilla.org/ko/docs/Web/HTTP/Overview)을 보고 공부한 걸 정리한 내용입니다.
 {: .prompt-info } -->
@@ -155,9 +156,9 @@ HTTP는 요청 간 상태를 기억하지 않지만 다음 기술로 상태를 �
 - TCP는 연결 지향형 프로토콜입니다. 두 호스트가 TCP 연결을 주고받기 전에 연결을 수립하고 통신이 끝났다면 연결을 끊는 특성을 가집니다.
 
 ### 1.연결 (3-way-handshake)
-![Image](https://github.com/user-attachments/assets/735f8e6b-5367-4836-a1c8-7bba2a0e64cf?raw=true)
+![Image](1.png)
 
-<!-- ![Image](https://github.com/user-attachments/assets/9f9a084a-d8e9-4c20-bb5b-4597bd875be2?raw=true){: w='400' } -->
+<!-- ![Image](2.png){: w='400' } -->
 
 
 ```mermaid
@@ -181,8 +182,8 @@ sequenceDiagram
 <br/>
  
 ### 2.데이터 송수신
-![Image](https://github.com/user-attachments/assets/c4c55529-9604-4d23-aa99-e57ffc0e755a?raw=true)
-![Image](https://github.com/user-attachments/assets/3dc740f3-8fa4-45d9-9290-55f781739343?raw=true){: w='400' }
+![Image](3.png)
+![Image](4.png){: w='400' }
 - 평문화로 데이터를 응답받는 모습을 볼 수 있습니다.
 
 <br/>
@@ -191,9 +192,9 @@ sequenceDiagram
 ### 3.연결 종료 (4-way-handshake)
 > FIN, ACK을 주고 받으며 이뤄집니다.
 
-![Image](https://github.com/user-attachments/assets/1de15adb-4f68-4f9f-8f1b-56bcc5773bc0?raw=true)
+![Image](5.png)
 
-<!-- ![Image](https://github.com/user-attachments/assets/914c8c51-c9d7-4a50-81fe-63a2e6b81a4c?raw=true){: w='400' } -->
+<!-- ![Image](6.png){: w='400' } -->
 
 ```mermaid
 ---
@@ -296,7 +297,7 @@ HTTP 메시지는 텍스트 기반으로 이루어져 있으며 줄바꿈을 **C
 
 예를 들어, HTTP 요청의 시작 줄과 헤더는 다음과 같은 형식으로 이루어집니다.
 
-![Image](https://github.com/user-attachments/assets/49b7ae2f-c9d8-4084-ab0e-f9aa8e32d8d0?raw=true)
+![Image](7.png)
 
 *여기서 \r\n\r\n은 헤더와 본문을 구분하는 역할을 합니다.    
 

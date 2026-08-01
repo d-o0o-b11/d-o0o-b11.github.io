@@ -5,6 +5,7 @@ categories: [Dev-Notes, Theory]
 tags: [typography]
 math: true
 mermaid: true
+media_subpath: /assets/img/posts/plaintext-vs-encryption
 ---
 
 ## 평문(Plaintext)
@@ -19,7 +20,7 @@ mermaid: true
 <br/>
 
 ## 암호화 방식
-![Image](https://github.com/user-attachments/assets/7607e624-d0b1-4650-8eb6-df81a7da8c72?raw=true)
+![Image](1.png)
 
 
 ### 대칭키 암호화(Symmetric encryption)
@@ -46,7 +47,7 @@ mermaid: true
 ## 암호화 종류
 
 ### 분류
-![Image](https://github.com/user-attachments/assets/c54264b1-8a3a-49ba-bc6c-d4168b641f57?raw=true){: w='400' }
+![Image](2.png){: w='400' }
 
 
 #### 양방향 암호화 (Reversible Encryption)
@@ -74,14 +75,14 @@ mermaid: true
 ## 양방향 알고리즘
 크게 2가지로 나뉩니다.
 
-![Image](https://github.com/user-attachments/assets/a1aff6eb-2157-4c15-b395-258537f1ad3d?raw=true){: w='400' }
+![Image](3.png){: w='400' }
 
 <br/>
 
 
 ### 1. 대칭키 암호화 (Symmetric Key Encryption)
 
-![Image](https://github.com/user-attachments/assets/c932d544-92c2-4834-acd7-96006da2b23b?raw=true)
+![Image](4.png)
 >암호화와 복호화에 동일한 키를 사용하는 방식입니다.
 
 <br/>
@@ -119,7 +120,7 @@ mermaid: true
 
 ### 2. 비대칭키 암호화 (Asymmetric key)
 
-![Image](https://github.com/user-attachments/assets/8041238d-250c-485e-91f0-b55095686cf3?raw=true)
+![Image](5.png)
 >암호화와 복호화에 서로 다른 키를 사용하는 방식입니다.  <br/>
 >일반적으로 **공개키(Public Key)**와 **개인키(Private Key)**를 사용하여 데이터를 암호화하고 복호화합니다.
 
@@ -163,7 +164,7 @@ mermaid: true
 
 ## 단방향 암호화
 
-![Image](https://github.com/user-attachments/assets/4da8a691-e900-4cec-8b91-bbbae0067096?raw=true){: w='400' }
+![Image](6.png){: w='400' }
 >단방향 암호화는 데이터를 한 번 변환하면 다시 복원할 수 없는 방식입니다.
 
 <br/>
@@ -174,7 +175,7 @@ mermaid: true
 - 주로 비밀번호 저장이나 데이터 무결성 검증 용도로 사용됩니다.
 
 ### 대표적인 단방향 알고리즘: 해시 함수
-![Image](https://github.com/user-attachments/assets/49a26c75-9142-4e9b-ab55-a73e278ccfbf?raw=true)
+![Image](7.png)
 
 - 해시 함수는 입력값을 고정된 길이의 해시값으로 변환합니다.
 - 한 번 변환된 값은 복원할 수 없으며 원본 데이터를 추론하는 것도 불가능합니다.

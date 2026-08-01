@@ -5,6 +5,7 @@ categories: [Dev-Notes, Practice]
 tags: [typography]
 math: true
 mermaid: true
+media_subpath: /assets/img/posts/oauth-backend
 ---
 
 ## 개요
@@ -20,7 +21,7 @@ mermaid: true
 <br/>
 
 ## 일반적인 OAuth 구조
-<!-- ![Image](https://github.com/user-attachments/assets/2e9ccb9f-cd7e-46a6-b593-43f093abc811?raw=true) -->
+<!-- ![Image](1.png) -->
 
 ```mermaid
 ---
@@ -66,7 +67,7 @@ sequenceDiagram
 
 
 ## 서버 중심의 OAuth 구조 (JWT AT & RT 발급)
-<!-- ![Image](https://github.com/user-attachments/assets/dd07be5e-d3ac-43e4-8b49-b2191889c382?raw=true) -->
+<!-- ![Image](2.png) -->
 
 
 ```mermaid
@@ -161,7 +162,7 @@ AT가 만료되면 RT를 이용해 새로운 AT를 발급받아야 했고 많은
 <br/>
 
 ## 서버에서 RT를 저장하고 AT만 발급하는 구조
-<!-- ![Image](https://github.com/user-attachments/assets/6193b605-a8f6-4e88-9155-195b414b1e35?raw=true) -->
+<!-- ![Image](3.png) -->
 ```mermaid
 ---
 config:

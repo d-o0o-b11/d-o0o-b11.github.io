@@ -5,6 +5,7 @@ categories: [Dev-Notes, Theory]
 tags: [typography]
 math: true
 mermaid: true
+media_subpath: /assets/img/posts/information-protection
 ---
 
 ## 정보 보호(Information Security) 란?
@@ -16,7 +17,7 @@ mermaid: true
 정보 보호에서는 **기밀성(Confidentiality), 무결성(Integrity), 가용성(Availability)**을 가장 중요한 요소로 삼으며 이를 CIA 삼각형이라고 부릅니다.
 이 원칙은 모든 보안 정책의 핵심이자 정보 보호의 기본 목표가 됩니다.
 
-![Image](https://github.com/user-attachments/assets/782661b5-2142-43a4-8cb3-22cc9ecb7d69?raw=true){: w='400' }
+![Image](1.png){: w='400' }
 
 ### 1. 기밀성 (Confidentiality)
 > 인가된 사용자만 정보에 접근할 수 있도록 보호하는 원칙 (암호화, 접근 제어)

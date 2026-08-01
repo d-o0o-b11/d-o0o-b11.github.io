@@ -7,6 +7,7 @@ tags: [typography]
 # pin: true
 math: true
 mermaid: true
+media_subpath: /assets/img/posts/deploy-end
 ---
 
 ## 개요
@@ -23,7 +24,7 @@ mermaid: true
 
 앱 출시 게시 후 검토를 기다리고 있던 중 구글로부터 한 통의 메일이 도착했습니다.
 
-![Image](https://github.com/user-attachments/assets/2cf29ef4-f80c-452f-9fd6-40c5cb4cf554?raw=true)
+![Image](1.png)
 
 앱 상태: 거부  
 
@@ -32,7 +33,7 @@ mermaid: true
 
 자세히 내용을 확인해보니 거절 사유는 다음과 같았습니다.
 
-![Image](https://github.com/user-attachments/assets/4693c4f5-c478-44e1-a89f-529c4b132593?raw=true)
+![Image](2.png)
 
 > **데모 또는 게스트 계정 세부정보 누락**
 
